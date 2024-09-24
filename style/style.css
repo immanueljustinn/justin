@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.picture {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 250px; 
+    height: 250px;
+}
+
+.about-me-container, .contact-person-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.biodata.container, .skill-container {
+    margin-bottom: 20px;
+}
+
+/* styling mobile dan desktop */
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+p.desktop {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ol {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.skill-picture-container {
+    margin: auto 158px;
+}
+
+.skill-picture-container ul li img {
+    margin-right: 30px;
+    position: relative;
+    top: 3px;
+}
+
+.skill-picture-container ul li ion-icon {
+    margin-right: 30px;
+    position: relative;
+    top: 3px;
+}
+
+.contact-person-container {
+    text-align: center;
+}
+
+/* Hover Effect */
+.hover-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #ff6347 /*Mengganti warna pada hover*/
+}
+
+.hover-instagram {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hover-instagram:hover {
+    color: #ff6347;
+}
+ 
+/* Contact detail layout */
+.contact-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-container li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.contact-container .label {
+    width: 120px; /* ukuran width tetap untuk label*/
+    font-weight: bold;
+}
+
+.contact-container .info {
+    flex-grow: 1;
+}
+
+/* flexbox layout for contact and map */
+.contact-map-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.contact-details {
+    width: 45%; /* contact mengambil 45% width*/
+}
+
+.map-container {
+    width: 50%; /*map mengambil 50% width*/
+    margin-left: 5%; /*jarak sebelah kiri antara contact dan map*/
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+}
+
+/* Responsive style */
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: inline-block;
+    }
+
+    .contact-map-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details, .map-container {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    .map-container iframe {
+        height: auto;
+    }
+
+    .map-container {
+        display: none;
+    }
+
+    .skill-container li {
+        display: block;
+    }
+
+    .contact-container ul li:nth-child(2) {
+        display: none;
+    }
+    
+    .contact-container ul {
+        text-align: center;
+    }
+}
